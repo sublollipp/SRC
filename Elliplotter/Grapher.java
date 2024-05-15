@@ -100,7 +100,7 @@ public class Grapher {
         p.fill(136, 219, 204);
         p.beginShape(p.QUADS);
         int leftx, rightx;
-        for(int i = 0; i < w - 1; i += stepSize) {
+        for(int i = 0; i < w - w % stepSize; i += stepSize) {
             float currentlefty = 0, currentrighty = 0;
             p.vertex(gX(i + stepSize), yToPixels(0));
             p.vertex(gX(i), yToPixels(0));

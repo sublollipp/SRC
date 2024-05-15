@@ -2,12 +2,12 @@ import processing.core.*;
 import java.lang.*;
 
 public abstract class ClickableObject {
-    public PApplet p;
-    public int x, y, w, h, c = 0, margin = 50;
-    public String t;
-    public boolean clicked = false;
+    protected PApplet p;
+    protected int x, y, w, h, c = 0, margin = 50;
+    protected String t;
+    protected boolean clicked = false;
 
-    public ClickableObject(PApplet p, int x, int y, int w, int h, String t) {
+    protected ClickableObject(PApplet p, int x, int y, int w, int h, String t) {
         this.p = p;
         this.x = x;
         this.y = y;
@@ -16,7 +16,7 @@ public abstract class ClickableObject {
         this.t = t;
     }
 
-    public ClickableObject(PApplet p, int x, int y, int w, int h) {
+    protected ClickableObject(PApplet p, int x, int y, int w, int h) {
         this.p = p;
         this.x = x;
         this.y = y;
@@ -37,7 +37,7 @@ public abstract class ClickableObject {
         return t;
     }
 
-    public void otherClick() {
+    protected void otherClick() {
 
     }
 
@@ -49,12 +49,12 @@ public abstract class ClickableObject {
         onRelease();
     }
 
-    public void onClick() {
+    protected void onClick() {
         clicked = true;
         c = 255;
     }
 
-    public void onRelease() {
+    protected void onRelease() {
         clicked = false;
         c = 0;
     }
