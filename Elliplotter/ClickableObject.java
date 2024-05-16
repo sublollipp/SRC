@@ -3,7 +3,7 @@ import java.lang.*;
 
 public abstract class ClickableObject {
     protected PApplet p;
-    protected int x, y, w, h, c = 0, margin = 50;
+    protected int x, y, w, h, c = 0;
     protected String t;
     protected boolean clicked = false;
 

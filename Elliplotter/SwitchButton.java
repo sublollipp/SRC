@@ -1,8 +1,8 @@
 import processing.core.*;
 
 public class SwitchButton extends ClickableObject {
-    String[] tlist;
-    int currentIndex = 0;
+    private String[] tlist;
+    public int currentIndex = 0;
     
     public SwitchButton(PApplet p, int x, int y, int w, int h, String[] tlist) {
         super(p, x, y, w, h);

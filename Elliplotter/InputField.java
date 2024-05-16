@@ -2,7 +2,7 @@ import processing.core.*;
 import java.util.*;
 
 public class InputField extends ClickableObject {
-    int charLimit = 0;
+    private int charLimit = 0;
 
     public InputField(PApplet p, int x, int y, int w, int h, int charLimit) {
         super(p, x, y, w, h);
